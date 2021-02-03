@@ -7,10 +7,6 @@ class ContactPolicy < ApplicationPolicy
     true
   end
 
-  def import?
-    @account_user.administrator?
-  end
-
   def search?
     true
   end
